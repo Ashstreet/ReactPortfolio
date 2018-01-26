@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300');
+
+button {
+  border: 0;
+  height: 50px;
+  margin-right: 1rem;
+  background: none;
+}
+
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active {
+  letter-spacing: 5px;
+}
+
+.nav-link:hover:after,
+.nav-link:hover:before,
+.nav-link.active {
+  backface-visibility: hidden;
+  border-color: black;
+  transition: width 350ms ease-in-out;
+  width: 90%;
+}
+
+.nav-link:hover:before,
+.nav-link.active {
+  bottom: auto;
+  top: 0;
+  width: 90%;
+}
+
+.nav-link:before
+.nav-link:hover {
+  display: none;
+}
+
+.nav-link:after,
+.nav-link:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(0, 0, 0, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.nav-link {
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 200px;
+    margin: 2rem auto;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%; 
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0;
+}
+
+.fa-car,
+.fa-terminal,
+.fa-hand-point-right,
+.fa-code,
+.fa-envelope,
+.fa-book {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 667px) {
+  .nav-link {
+    display: inline-block;
+  }
+}
+
+.btn {
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  color: black;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  margin: 1rem 10%;
+  min-width: 150px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid black;
+  -webkit-transition:0.5s;
+}
+
+.btn:hover {
+  border: 2px solid white;
+  color: #FFF;
+  background-color: black;
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+

@@ -1,0 +1,14 @@
+.code-block {
+    white-space: pre-wrap;
+    margin:  0 2rem;
+    padding: 1.4rem;
+    background-color:#343434;
+    color: #F1B700;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .code-block {
+        margin:  0 4rem;
+    }
+}   

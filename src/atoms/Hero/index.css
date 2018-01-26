@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Economica:700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300');
+
+.homepage-hero,
+.page-title {
+    background-color: black;
+    color: white;
+    max-width: 57%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding: 2rem;
+    transform: rotate(5deg);
+    font-size: 3rem;
+    font-family: 'Economica', sans-serif;
+}
+
+.homepage-hero-sub {
+    font-family: 'Economica', sans-serif;
+    background-color: black;
+    color: white;
+    max-width: 44%;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.homepage-container {
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}

@@ -1,0 +1,21 @@
+.intro {
+    width: 50%;
+    margin: 4rem auto;
+    font-family: 'Rubik', sans-serif;
+}
+
+.code-paragraph {
+    margin: 1rem 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.code-intro {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+@media only screen and (min-width: 1200px) {
+    .code-paragraph {
+        margin: 3rem 15rem;
+    }
+}   

@@ -1,0 +1,23 @@
+nav {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-holder {
+    margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 667px) {
+    li {
+        margin-right: 50px;
+        display: inline-block;
+    }
+} 

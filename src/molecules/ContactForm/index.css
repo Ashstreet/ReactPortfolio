@@ -1,0 +1,42 @@
+input[type="email"],
+input[type="text"],
+textarea {
+    margin: 10px auto;
+    display: block; 
+    width: 75%;
+    height: 50px;
+    font-size: 1rem;
+    padding-left: 0.3rem;
+    border: 1px solid black;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+textarea::placeholder {
+    font-family: 'Rubik', serif;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    text-align: center;
+    margin: 0 1.2rem;
+    padding: 1.2rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 90%;
+    top: 70%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-form {
+        width: 35%;
+        top: 0%;
+        left: 51.5%;
+        height: 462px;
+    }
+
+    #map {
+        margin: 8rem 40rem 8rem 6rem;
+        height: 500px;
+    }
+}
