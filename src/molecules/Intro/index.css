@@ -1,12 +1,10 @@
 /*
-Desktop
+Mobile
 */
 .intro-section {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 1rem;
-    margin-bottom: 0;
-    padding: 0.6rem;
+    padding: 3rem;
 }
 
 .center {
@@ -17,7 +15,5 @@ Desktop
 Tablet
 */
 @media only screen and (min-width: 667px) {
-    .intro-section {
-        margin: 4rem;
-    }
+
 }

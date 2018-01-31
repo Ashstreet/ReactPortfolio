@@ -30,7 +30,7 @@ class Map extends Component {
         marker = new google.maps.Marker({
             map: map,
             position: {lat: this.state.lat, lng: this.state.lng}
-        })
+        });
     }
       
     render() {

@@ -2,28 +2,20 @@
 import React, { Component } from 'react';
 
 //Component
-import GlobalHeader from '../../organisms/GlobalHeader';
 import IntroSection from '../../organisms/Homepage/IntroSection';
-import Header from '../../molecules/Header';
+import Header from '../../organisms/Homepage/Header';
 
 class HomePage extends Component {
     render() {
       return (
-        <main>
-            <div>
-                <div>
-                    <Header />
-                </div>
-                <div>
-                    <IntroSection />
-                </div>
-                <footer>
-                    <GlobalHeader />
-                </footer>
-            </div>
-        </main>
-      )
+        <section>
+            <Header />
+            <IntroSection />
+        </section>
+        );
     }
-  }
+}
 
-  export default HomePage;
+export default HomePage;
+
+

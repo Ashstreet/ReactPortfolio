@@ -1,31 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=Economica:700');
 @import url('https://fonts.googleapis.com/css?family=Rubik:300');
+@import url('https://fonts.googleapis.com/css?family=Karla:400i');
 
-.homepage-hero,
-.page-title {
-    background-color: black;
-    color: white;
-    max-width: 57%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    padding-top: 4rem;
-    padding: 2rem;
-    transform: rotate(5deg);
-    font-size: 3rem;
-    font-family: 'Economica', sans-serif;
-}
-
-.homepage-hero-sub {
-    font-family: 'Economica', sans-serif;
-    background-color: black;
-    color: white;
-    max-width: 44%;
+.hero-content {
+    border: 3px solid;
     padding: 1rem;
-    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 3rem;
+    box-shadow: -5px -1px 27px 20px #000000;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    position: relative;
+    text-align: center;
 }
 
 .homepage-container {
-    padding-top: 2rem;
-    text-align: center;
-    margin-bottom: 5rem;
+    background: url('https://image.ibb.co/h0DFKG/Test.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size: cover; 
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: flex-end;
+}
+
+.rw-words {
+	display: inline;
+}
+
+.rw-words span {
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+    color: #808080;
+    white-space: nowrap;
+    top: 76%;
+    right: 0;
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+}
+
+.rw-words span::first-letter {
+    color: #008CFF; 
+}
+.rw-words span {
+	animation: rotateWordsSecond 18s linear infinite 0s;
+}
+
+.rw-words span:nth-child(2) { 
+	animation-delay: 3s; 
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 6s; 
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 9s;
+}
+.rw-words span:nth-child(5) { 
+	animation-delay: 12s; 
+}
+
+.rw-words span:nth-child(6) { 
+	animation-delay: 15s; 
+}
+
+.rw-words span:nth-child(7) { 
+	animation-delay: 18s;
+}
+
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+/*
+Desktop
+*/
+@media only screen and (min-width: 1200px) {
+    .hero-content {
+        padding: 1rem 3rem;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .rw-words span {
+        top: 65%;
+        left: 8%;
+    }
 }

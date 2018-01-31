@@ -2,83 +2,47 @@
 Mobile 
 */
 .component {
+    text-align: center;
     position: relative;
-    padding: 1rem;
-    margin: 0 auto;
-    height: 750px;
-    max-width: 1200px;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+}
+
+.brand-image {
+    opacity: 0.3;
 }
 
 .content-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    opacity: 1;
     position: absolute;
-    width: 70%;
-    top: 30%;
-    left: 10%;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /*
 Tablet
 */
-@media only screen and (min-width: 600px) {
-    .content-container {
-        top: 42%;
-        left: 37%;
-    }
+@media only screen and (min-width: 1024px) {
+
 }
 
 /*
 Desktop
 */
 @media only screen and (min-width: 1200px) {
-    .component {
-        margin: 0 auto 10rem 5rem;
+    .brand-image {
+        opacity: 1;
     }
-
-    .image-container {
-        height: 300px;
-        width: 300px;
-    }    
-
+    
     .content-container {
-        height: auto;
-        left: 60%;
-        top: 15%;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        width: 64%;
-        text-align: center;
+        opacity: 0;
     }
-
-    .brand-heading {
-        text-align: center;
-    }
-
-    .brand-heading::before {
-        height: 3rem;
-        content: "";
-        width: 2px;
-        background: black;
-        display: block;
-        margin: 0 auto 2rem;
-    }
-
-    .brand-paragraph {
-        padding: 1.5rem;
-    }
-}
-
-
-@media only screen 
-and (min-device-width: 1024px) 
-and (max-device-width: 1366px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 1.5) {
-    .content-container {
-        left: 37%;
-        padding-bottom: 6rem;
+    
+    .component:hover .brand-image {
+        opacity: 0.3;
+      }
+      
+    .component:hover .content-container {
+        opacity: 1;
     }
 }

@@ -6,21 +6,25 @@ import Image from '../../atoms/Image';
 import Heading from '../../atoms/Heading';
 import Paragraph from '../../atoms/Paragraph';
 import Link from '../../atoms/Links';
-import { Grid, Col, Row } from 'react-flexbox-grid';
+import Slider from 'react-slick';
 import './index.css';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class BrandCard extends Component {
     render() {
-      let content;
+      let content,
+      settings;
+
+      settings = {
+        infinite: true,
+        dots: true
+      };
 
       content = this.props.content.map((content)=>
-
-        <Col xs>
+        <Col xs sm md lg={4}>
           <div key={content.id} className="component">
             <Image class={content.imageClass} tabletImage={content.tabletImage} largeImage={content.largeImage} className={content.imageClass} smallImage={content.smallImage} imageAlt={content.altText} />
             <div className="content-container">
-                <Heading titleStyle={content.headingStyle} headinglevel={content.headingLevel} title={content.title}/>
-                <Paragraph paraClass={content.paragraphStyle} content={content.content} />
                 <Link icon={content.icon} linkProp={content.el} linktype={content.style} linkurl={content.url} linkName={content.title} />
             </div>
           </div>
@@ -28,11 +32,13 @@ class BrandCard extends Component {
     );
 
       return (
-        <Grid>
-          <Row>
+        <Row>
+        <Col xs={12}>
+          <Row between="xs">
             {content}
           </Row>
-        </Grid>
+        </Col>
+        </Row>
       )
     }
   }

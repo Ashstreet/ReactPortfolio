@@ -6,8 +6,8 @@ import Hero from '../../atoms/Hero';
 
 class HomePage extends Component {
     render() {
+
       return (
-        <div className={this.props.position}>
             <Hero 
             className={this.props.heroClass}
             heroText={this.props.heroText}
@@ -15,8 +15,9 @@ class HomePage extends Component {
             heroClass={this.props.heroClass}
             heroSub={this.props.heroSub} 
             heroType={this.props.heroType} 
+            heroWords={this.props.heroWords}
+            containerClass={this.props.containerClass}
             />
-        </div>
       )
     }
   }
