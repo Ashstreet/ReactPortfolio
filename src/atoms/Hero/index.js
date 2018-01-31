@@ -7,9 +7,10 @@ class Hero extends Component {
     render() {
       let words;
       
-            words = this.props.heroWords.map((words) =>
-              <span>{words.word}</span>
-            );
+      words = this.props.heroWords.map((words) =>
+          <span>{words.word}</span>
+      );
+      
       return (
         <header className={this.props.heroType}>
           <div className={this.props.containerClass}>
