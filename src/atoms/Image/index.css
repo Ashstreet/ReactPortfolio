@@ -8,20 +8,26 @@
 }
 
 .brand-image {
-    height: 300px;
-    width: 350px;
+    height: 250px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 600px) {
-    .brand-image {
+    /* .brand-image {
         height: 400px;
         width: 600px;
-    }
+    } */
 }   
 
 @media only screen and (min-width: 1200px) {
     .brand-image {
-        height: 800px;
-        width: 1200px;
+        margin: 0;
+    }
+
+    .slick-slide img {
+        display: inline-block;
+        margin-left: 11%;
+        float: left;
     }
 }   
